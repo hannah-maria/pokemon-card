@@ -155,7 +155,7 @@ form button{
     width: 100%;
 }
 #card-wrapper{
-    margin-top: 70px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
