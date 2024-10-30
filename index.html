@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img src="assets/icon.png" width=40px id="logo">
+            <h1>
+                <span>Carde</span>Mon
+            </h1>
+        </div>
+        <div class="right">
+            <button><i class="fa-regular fa-star"></i> Star on Github</button>
+        </div>
+    </nav>
+    <section class="home">
+        <img src="assets/banner.png">
+        <h1>Pokémon Adventure Awaits!</h1>
+        <p>Dive into the world of Pokémon with Pokedeck! 
+            Choose how many Pokémon cards you’d like to explore and pick your favorite Pokémon type. 
+            Whether you’re just starting your journey or are a seasoned trainer, 
+            uncover detailed information about each Pokémon and enhance your Poké-experience!
+        </p>
+        <form id="poke-form">
+            <select name="pokemon-type" id="pokemon-type" required>
+                <option value="" disabled selected>Enter Pokémon Type</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="ice">Ice</option>
+                <option value="fighting">Fighting</option>
+                <option value="poison">Poison</option>
+                <option value="ground">Ground</option>
+                <option value="flying">Flying</option>
+                <option value="psychic">Psychic</option>
+                <option value="bug">Bug</option>
+                <option value="rock">Rock</option>
+                <option value="ghost">Ghost</option>
+                <option value="dragon">Dragon</option>
+                <option value="dark">Dark</option>
+                <option value="steel">Steel</option>
+                <option value="fairy">Fairy</option>
+            </select>
+            <input type="number" placeholder="Number of cards" id="pokemon-number">
+            <button id="fetch-btn">Fetch cards</button>
+        </form>
+
+        <div id="scroller">
+            <img src="assets/scroll.gif">
+        </div>
+
+        <div id="loader">
+            <img src="assets/loader.png" id="loaderImg" alt="Loading..." width="50">
+        </div>
+    </section> 
+
+    <section class="cards">
+        <div id="card-wrapper">
+            
+        </div>
+        </div>
+    </section>
+</body>
+<script src="scripts.js"></script>
+</html>
