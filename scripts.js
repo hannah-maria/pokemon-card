@@ -60,3 +60,7 @@ document.getElementById('fetch-btn').addEventListener('click', async function(ev
         loader.style.display-'none';
     }
 });
+
+function go_github(){
+    window.location.href="https://github.com/hannah-maria/pokemon-card";
+}
