@@ -141,6 +141,7 @@ form button{
 }
 
 #scroller{
+    margin-top: 25px;
     display: none;
 }
 
