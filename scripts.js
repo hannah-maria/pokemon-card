@@ -45,10 +45,10 @@ document.getElementById('fetch-btn').addEventListener('click', async function(ev
         }
     }
 
-    setTimeout(async()=>{
-        await loadCards();
+   setTimeout(()=>{
         loader.style.display='none';
         scroller.style.display='block';
+        loadCards();
     },2500);
     }
     catch(error){
